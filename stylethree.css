@@ -1,0 +1,192 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    color: #000000;
+    margin: 0;
+    background-color: #F8F8F8;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url('TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TTLakes-Bold.woff') format('woff'),
+        url('TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes Medium';
+    src: url('TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url('TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('TTLakes-Medium.woff') format('woff'),
+        url('TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TTLakes-Regular.woff') format('woff'),
+        url('TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.container{
+width: 89.055%;
+   margin: 0 auto;
+}
+
+  .brand__list__title{
+    background: linear-gradient(to right, #F8F8F8,rgb(255, 255, 255));
+    height: 80px;
+   border-top: 1px solid #B8FFEC;
+   display: flex;
+   align-items: center;
+   margin-bottom: 16px;
+  }
+.brand__list__items-button{
+    display: flex;
+    width: 208px;
+    height: 72px;
+    background-color: #ffffff;
+    border:1px solid rgba(234, 234, 234, 1);
+    align-items: center;
+    border-radius: 5px;
+    justify-content: space-between;
+    padding: 0px 16px 0px 16px;
+}
+.brand__list__title-content{
+    text-transform: uppercase;
+    color: rgba(126, 126, 130, 1);
+    
+}
+.brand__list__pagination {
+    text-align: center;
+    
+}
+
+
+.brand__list__pagination .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    background-color: rgba(181, 182, 188, 1);
+    bottom: 0;
+    
+}
+.brand__list__reveal-part__button{
+    display: none;
+    
+}
+.brand__list__items-packing.swiper-wrapper {
+    height: 120px;
+}
+.brand__list__items.container{
+    margin-left: 5%;
+    width: auto;
+}
+    .brand__list__items-swiper.swiper:before {
+    content: '';
+    display: block;
+    width: 10px; 
+    height: 73px; 
+    box-shadow: 0 0 10px 10px white;
+    position: absolute;
+    top: 0;
+    right: -10px; 
+    z-index: 2;
+}
+@keyframes shrink {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(0.8); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+
+.brand__list__items-switching {
+    transition: transform 0.3s ease; 
+}
+
+.brand__list__items-switching.clicked {
+    animation: shrink 0.5s; 
+}
+@media (min-width: 768px) { 
+    .brand__list__items.container{
+        width: 89.055%;
+           margin: 0 auto;
+        }
+    .swiper {
+        width: 100%;
+      }
+   
+    .brand__list__items-swiper.swiper{
+        overflow: hidden;
+    }
+   .brand__list__items-slide.swiper-slide{
+    width: auto;
+    height: auto;
+   }
+   .brand__list__items-button {
+    width: 183px;
+    
+}
+
+.brand__list__items-packing.swiper-wrapper {
+    display: grid;
+   gap: 16px;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, 217px); 
+    height: 170px;
+    transition: height 0.3s ease;
+}
+.brand__list__reveal-part__button{
+    align-self: flex-start;
+    font-size: 16px;
+    border: none;
+    background: transparent;
+    margin-top: 10px;
+    display: block;
+}
+.brand__list__reveal-part__button img ,span{
+    vertical-align: middle;
+    padding: 5px;
+    cursor: pointer;
+}
+.brand__list__reveal-part__text{
+    font-weight: 500;
+}
+.brand__list__items-swiper.swiper:before {
+    
+    display: none;
+    
+}
+    }
+    @media (min-width: 1120px) { 
+        .brand__list__items-button {
+            width: 206px;
+            
+        }
+        .brand__list__items-packing.swiper-wrapper {
+            display: grid;
+            row-gap: 16px;
+            column-gap: 12px;
+            justify-content: space-between;
+            grid-template-columns: repeat(auto-fill, 240px); 
+        }
+    }
